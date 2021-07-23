@@ -12,13 +12,13 @@ console.groupEnd();
 console.group('Triángulo');
 const ladoTriangulo1 = 6;
 const ladoTriangulo2 = 6;
-const ladoTriangulo3 = 4; 
+const baseTriangulo = 4; 
 const alturaTriangulo = 5.5;
-const basetriangulo = 6;
 
 
-const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + ladoTriangulo3;
-const areaTriangulo = (basetriangulo * alturaTriangulo) / 2; 
+
+const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
+const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2; 
 
 
 console.log(
@@ -27,11 +27,38 @@ console.log(
      + 'cm, ' 
      + ladoTriangulo2 
      + 'cm  y ' 
-     + ladoTriangulo3 
+     + baseTriangulo 
      + 'cm'
      );
-console.log('La altura del triángulo esde: ' + alturaTriangulo + 'cm');
-console.log('El perímetro del triángulo es: ' + perimetroCuadrado + ' cm');
+console.log('La altura del triángulo es de: ' + alturaTriangulo + 'cm');
+console.log('La base del triángulo es de: ' + alturaTriangulo + 'cm');
+console.log('El perímetro del triángulo es: ' + perimetroTriangulo + ' cm');
 console.log('El área del triangulo es: ' + areaTriangulo+ ' cm^2');
 
-     console.groupEnd();
+console.groupEnd();
+
+ // Circulos 
+ console.group('Circulos')
+
+// Código de circulo 
+
+// Radio 
+const radioCirculo = 4;
+console.log('El radio de círculo es de: ' + radioCirculo + 'cm');
+
+// Diámetro 
+const diametroCirculo = radioCirculo * 2; 
+console.log('El diámetro del círculo es de: ' + diametroCirculo + 'cm');
+
+// PI
+const PI = Math.PI
+
+// Circunferencia 
+const perimetroCirculo = diametroCirculo * PI;
+console.log('El perímetro del círculo es de: ' + perimetroCirculo + 'cm');
+
+// Área 
+areaCirculo = (radioCirculo * radioCirculo) * PI;
+console.log('El área de círculo es de: ' + areaCirculo + 'cm^2');
+
+ console.groupEnd();
